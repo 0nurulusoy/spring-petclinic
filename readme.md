@@ -7,6 +7,8 @@ PS: if you wanna access it from host ip or host's public ip you need to add host
     
     docker pull tryingtobecoder/docker-hello-world:latest
     docker run -d --network host tryingtobecoder/docker-hello-world:latest
+    
+Now go to, http://server_ip:8080
 
 ## If you want to edit the image,
 
