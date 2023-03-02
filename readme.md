@@ -1,6 +1,14 @@
-# Pubishing a docker image to dockerhub.
+# spring-petclinic as docker container.
 
-### First build the image locally.
+
+### Run the image with below command, you need to wait up to 1-2 mins to access it from browser, if you wanna access it from host ip or host's public ip you need to add host option just like below command, and while running since this is an designed as interactive java app, if you want it to run it in background, don't forget to add -d parameter.
+    
+    docker pull tryingtobecoder/docker-hello-world:latest
+    docker run -d --network host tryingtobecoder/docker-hello-world:latest
+
+## If you want to edit the image,
+
+### First get the project files after edditing them, build the image locally.
 
     git clone https://github.com/devopsrange/spring-petclinic
     cd spring-petclinic
@@ -10,8 +18,3 @@
     
     docker tag spring-petclinic-app:latest tryingtobecoder/docker-hello-world:latest
     docker push tryingtobecoder/docker-hello-world:latest
-
-### Lets pull and run the image. While running since this is an designed as interactive java app, if you want it to run it in background, don't forget to add -d parameter, and the host option is for you to access webui from host address.
-    
-    docker pull tryingtobecoder/docker-hello-world:latest
-    docker run -d --network host tryingtobecoder/docker-hello-world:latest
