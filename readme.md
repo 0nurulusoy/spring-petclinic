@@ -1,4 +1,4 @@
-# spring-petclinic as docker container.
+# Run spring-petclinic application as a docker container.
 
 
 ### Run the image with below command, you need to wait up to 1-2 mins to access it from browser
