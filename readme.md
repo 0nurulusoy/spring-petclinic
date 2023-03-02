@@ -1,7 +1,9 @@
 # spring-petclinic as docker container.
 
 
-### Run the image with below command, you need to wait up to 1-2 mins to access it from browser, if you wanna access it from host ip or host's public ip you need to add host option just like below command, and while running since this is an designed as interactive java app, if you want it to run it in background, don't forget to add -d parameter.
+### Run the image with below command, you need to wait up to 1-2 mins to access it from browser
+
+PS: if you wanna access it from host ip or host's public ip you need to add host option just like below command, and while running since this is an designed as interactive java app, if you want it to run it in background, don't forget to add -d parameter.
     
     docker pull tryingtobecoder/docker-hello-world:latest
     docker run -d --network host tryingtobecoder/docker-hello-world:latest
