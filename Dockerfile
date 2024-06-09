@@ -19,3 +19,4 @@ RUN mvn package -DskipTests
 
 # Set the startup command to run the application
 CMD ["./mvnw", "spring-boot:run"]
+EXPOSE 8080
